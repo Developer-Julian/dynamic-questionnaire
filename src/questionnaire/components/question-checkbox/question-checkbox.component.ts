@@ -4,7 +4,7 @@ import {
   Input,
   OnInit,
 } from '@angular/core';
-import { QuestionModel } from 'src/questionnaire/models/question.model';
+import { QuestionModel } from '../../models/question.model';
 
 @Component({
   selector: 'question-checkbox',

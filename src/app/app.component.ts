@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { QuestionType } from '../questionnaire/enums/question-type.enum';
-import { ExcelFileParserService } from 'src/questionnaire/services/excel-file-parser.service';
+import { ExcelFileParserService } from '../questionnaire/services/excel-file-parser.service';
 import { QuestionModel } from '../questionnaire/models/question.model';
 import { HttpProxyService } from './services/http-proxy.service';
 
