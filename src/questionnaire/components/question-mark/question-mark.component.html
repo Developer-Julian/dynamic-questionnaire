@@ -1,0 +1,3 @@
+<mat-radio-group [(ngModel)]="question.value">
+    <mat-radio-button class="question-mark" color="primary" name="radio-{{question.title}}-{{value}}" [value]="value" *ngFor="let value of question.multyValues">{{value}}</mat-radio-button>
+</mat-radio-group>

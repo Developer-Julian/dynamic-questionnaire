@@ -1,0 +1,12 @@
+::ng-deep {
+  .question-mark {
+    .mat-radio-label {
+      flex-direction: column;
+      margin-right: 30px;
+
+      .mat-radio-label-content {
+        padding-left: 0px;
+      }
+    }
+  }
+}

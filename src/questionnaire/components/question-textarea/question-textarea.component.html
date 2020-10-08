@@ -1,0 +1,10 @@
+<div>
+    <mat-form-field>
+        <mat-label>{{question.placeholder}}</mat-label>
+        <textarea matInput
+                  cdkTextareaAutosize
+                  cdkAutosizeMinRows="1"
+                  cdkAutosizeMaxRows="6"
+                  [(ngModel)]="question.value"></textarea>
+    </mat-form-field>
+</div>

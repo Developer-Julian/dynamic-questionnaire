@@ -1,0 +1,20 @@
+<div class="questionnaire-wrapper">
+  <question-uploader (uploadFile)="uploadFile($event)"></question-uploader>
+  <questionnaire>
+    <question *ngFor="let question of questions">
+      <question-title>
+        <div class="question-title">{{question.title}}</div>
+      </question-title>
+      <question-body>
+        <question-input *ngIf="question.type === questionType.Input" [question]="question"></question-input>
+        <question-checkbox *ngIf="question.type === questionType.Checkbox" [question]="question"></question-checkbox>
+        <question-radio *ngIf="question.type === questionType.Radio" [question]="question"></question-radio>
+        <question-textarea *ngIf="question.type === questionType.Textarea" [question]="question"></question-textarea>
+        <question-select *ngIf="question.type === questionType.Select" [question]="question"></question-select>
+        <question-date *ngIf="question.type === questionType.Date" [question]="question"></question-date>
+        <question-mark *ngIf="question.type === questionType.Mark" [question]="question"></question-mark>
+      </question-body>
+    </question>
+  </questionnaire>
+  <question-save (save)="save()"></question-save>
+</div>

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.questionnaire-wrapper {
+  font-size: 16px;
+  color: rgb(44, 51, 69);
+  font-family: Inter, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecedf3;
+  height: auto;
+  min-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.mat-form-field {
+  width: 100%;
+}
+.answer-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.question-wrapper {
+  margin-bottom: 50px;
+}
+.answer-radio-button {
+  margin: 5px;
+}
+.question-body {
+  background-color: white;
+  width: 600px;
+  border-radius: 5px;
+  padding: 60px;
+  margin: 5px;
+}
+.question-title {
+  font-weight: bold;
+}
+.margin-left-10 {
+  margin-left: 10px !important;
+}

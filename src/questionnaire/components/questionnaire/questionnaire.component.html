@@ -1,0 +1,15 @@
+<div class="question-body">
+    <div
+      class="question-wrapper"
+      *ngFor="let item of questionItems | async"
+    >
+      <ng-container *ngIf="item.titleComponent">
+        <ng-container *ngTemplateOutlet="item.titleComponent.titleContent">
+        </ng-container>
+      </ng-container>
+      <ng-container *ngIf="item.contentComponent">
+        <ng-container *ngTemplateOutlet="item.contentComponent.bodyContent">
+        </ng-container>
+      </ng-container>      
+    </div>
+</div>

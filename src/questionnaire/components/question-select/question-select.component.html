@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill">
+    <mat-label>{{question.placeholder}}</mat-label>
+    <mat-select [(value)]="question.value">
+      <mat-option *ngFor="let value of question.multyValues" [value]="value">
+        {{value}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
